@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <!-- Icono de barra de tareas -->
+    <link rel="shortcut icon" href="img/coff1.png" />
+    <!-- fuentes google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+<!-- Medicina sin filtros sera una pagina destinada para usuarios que esten necesitando ayuda para compensar materias, afianzar conocimientos en la rama de la medicina.
+Los que trabajan en este tipo de trabajo tienen varios años estudiando medicina y tienen las ganas para dar su tiempo en todos los clientes.
+
+Me parecio buena idea darle una mano a un amigo, para construirle esta pagina y depaso afianzar conocimientos- -->
+
+<meta name="description" content="Mejor rendimiento en varias cursadas, facultades, intensivos para la medicina">
+<meta name="language" content="Spanish">
+<meta name="author" content="Pablo Perez">
+<meta name="keywords" content="cursos de medicina, UBA, UAI, BARCELO, FAVAROLO, MEDICINA">
+
+    <title>Medicina sin filtros - Armando Torres</title>
+  </head>
+
+  <body>
+    <!-- Menu -->
+    <section>
+      <div class="col-lg-11">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+          <div class="container">
+            <a class="navbar-brand " href="#index"
+              ><i class="fas fa-laptop-medical" id="index"> Medicina sin filtros </i></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-dark navbar__letra"
+                    aria-current="page"
+                    href="#"
+                    >Incio<span class="sr-only"></span
+                  ></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-dark navbar__letra" href="#materias"  >Materias</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark navbar__letra" href="#nosotros" >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark navbar__letra" href="#" >Contactanos</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- links -->
+
+      <div class="row no-gutters">
+        <div class="col-lg-1 d-none d-lg-block border-right">
+          <div class="d-flex">
+            <ul class="list-unstyled align-self-center mx-auto">
+              <li class="costado">
+                <a href="https://github.com/pabloperez293" class="text-dark"
+                  ><i class="fab fa-github">Gitgub</i></a>
+              </li>
+              <li class="costado">
+                <a href="https://twitter.com/PabloVbosch" class="text-dark"
+                  ><i class="fab fa-twitter-square">Twitter</i></a
+                >
+              </li>
+              <li class="costado">
+                <a href="#" class="text-dark"
+                  ><i class="fab fa-facebook">Facebook</i></a
+                >
+              </li>
+              <li class="costado">
+                <a href="https://www.linkedin.com/in/pabloperezant/" class="text-dark"
+                  ><i class="fab fa-linkedin">Linkedin</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex">
+          <div class="container align-self-center p-1">
+            <h1 class="text-uppercase font-weight-bold mb-3">
+              Vamos a estar para darte una mano siempre con la Medicina
+            </h1>
+            <p class="lead-xl mb-3">Siempre y cuando estes a tiempo</p>
+            <a href="#" class="btn btn-info">Ver mas</a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/slider1.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="img/slider2.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/slider3.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Termina presentacion -->
+    <section class="w-50 mx-auto text-center pt-5" id="intro">
+      <h2 class="p-5 fs-1 border-top border-8">
+        Medicina sin filtros es una ayuda a todas tus dudas sobre la medicina
+        del ayer y hoy
+      </h2>
+      <p class="p-3 fs-5">
+        Estos son algunos cursos y temas vas a poder desarrollar mas a profundo
+        los temas, para poder seguir adelante en cualquier traba que tengas
+      </p>
+    </section>
+    <!-- Palabras -->
+
+    <!-- Galeria de Materias -->
+    <div class="container gradiente" id="materias">
+      <div class="row m-3">
+        <div class="col-lg-4 mb-4">
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+            <img class="w-100 mb-4 rounded" src="img/im0.jpeg" alt="" />
+          </a>
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+            <img class="w-100 mb-4 rounded" src="img/im1.jpeg" alt="" />
+          </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
+            <img class="w-100 mb-4 rounded" src="img/im2.jpeg" alt="" />
+          </a>
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4">
+            <img class="w-100 mb-4 rounded" src="img/im3.jpeg" alt="" />
+          </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5">
+            <img class="w-100 mb-4 rounded" src="img/im4.jpeg" alt="" />
+          </a>
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6">
+            <img class="w-100 mb-4 rounded" src="img/im5.jpeg" alt="" />
+          </a>
+        </div>
+      </div>
+      <!-- imagenes click -->
+
+      <div
+        tabindex="-1"
+        aria-labelledby="modalImage1"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage1"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="img/im0.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        tabindex="-1"
+        aria-labelledby="modalImage2"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage2"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="img/im1.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        tabindex="-1"
+        aria-labelledby="modalImage3"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage3"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="img/im2.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        tabindex="-1"
+        aria-labelledby="modalImage4"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage4"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="img/im3.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        tabindex="-1"
+        aria-labelledby="modalImage4"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage5"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="img/im4.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        tabindex="-1"
+        aria-labelledby="modalImage4"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage6"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="img/im5.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- fin imagenes click -->
+
+  <section>
+    <div class="container p-5 mb-4">
+    <div class="row gradiente1">
+      <div class="card mb-3 text-dark" >
+        <div class="row g-0">
+          <div class="col-md-2" id="nosotros">
+            <img src="img/img.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body ">
+              <h5 class="card-title">Armando Torres</h5>
+              <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="iconos d-flex flex-row-reverse  bd-highlight mb-2">
+              <a class="p-3" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a class="p-3" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              <a class="p-3" href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 text-dark" >
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="img/imgwo.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Rocio Perez</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="iconos d-flex flex-row-reverse  bd-highlight mb-2">
+                <a class="p-3" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a class="p-3" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a class="p-3" href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+     
+      <div class="card mb-3 text-dark" >
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="img/img.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Rocio Perez</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="iconos d-flex flex-row-reverse  bd-highlight mb-2">
+                <a class="p-3" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a class="p-3" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a class="p-3" href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+    <!-- Iconos -->
+    <script
+      src="https://kit.fontawesome.com/2960c27358.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+
+   
+  </body>
+</html>
