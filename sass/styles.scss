@@ -53,6 +53,27 @@ body{
 .border-right{
     border-right: 1px solid rgba(24, 24, 24, 0) !important;
 }
+// movimiento de letras
+h1{
+    position: relative;
+    float: left;
+    h1 span{
+        position: absolute;
+        right: 0;
+        width: 0;
+        border-left:  1px solid #000;
+        animation: escribir 5s steps(60) infinite alternate;
+    }
+}
+@keyframes escribir {
+    from {
+        width: 100%;}
+        to{
+            width: 0;
+        }
+    }
+
+
 // imagenes
 .gradiente{
     width: 70%;
@@ -64,8 +85,6 @@ body{
     height: 80%;
     background-image: linear-gradient(black, white);
 }
-
-
 @media (max-width: 1199px){
     .costado{
         margin: 2rem 0 ;
