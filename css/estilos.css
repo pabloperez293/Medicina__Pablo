@@ -1,9 +1,9 @@
 :root {
-  --col-am:yellow;
-  --col-ne:black;
-  --col-bl:white;
+  --col-am: rgb(235, 78, 30);
+  --col-ne: black;
+  --col-bl: white;
+  --col-light: rgb(29, 93, 156);
 }
-
 body {
   font-family: "arial", sans-serif;
   font-weight: 200;
@@ -23,7 +23,14 @@ body {
   color: var(--col-ne);
   border: 1px solid var(--col-am);
 }
+/* se agrega para el iniciio */
 
+#inicio {
+  height: 550px;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
 .costado {
   font-size: 1.1rem;
   writing-mode: vertical-lr;
@@ -35,15 +42,96 @@ body {
   margin: 0.2rem 0;
   transform: rotate(-180deg);
 }
-
+.banner__img {
+  background-image: url(../img/fondo.jpg);
+}
 .border-right {
   border-right: 1px solid rgba(24, 24, 24, 0) !important;
 }
+.box {
+  background-color: #fff;
+  box-shadow: 0 0 0 1px #e2e9ed;
+  padding: 40px 10px;
+  position: relative;
+  z-index: 0;
+  transition: 0.2s all;
+}
+.box:hover {
+  z-index: 1;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+  transform: scale(1.04);
+}
+.box .box__Content {
+  margin: 10px 0;
+}
+.box .box__Content .title{
+  color: #313435;
+  font-family: 'Yuji Syuku', serif; 
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4rem;
+  margin: 0;
+}
+.box .box__Content .post{
+   font-family: 'Yuji Syuku', serif;
+   font-size: 18px;
+   line-height: 2.375rem;
+   color: #6f808a;
+}
+.box .icons{
+  margin: 0;
+  padding: 0;
+  list-style-type:none ;
+  opacity: 0;
+  transform: translateY(10px );
+  transition: 0.2s all;
+}
+.box:hover .icons{
+  opacity: 1;
+  transform: translateY(10px );
 
+}
+.box .icons li{
+  display: inline-block;
+  margin: 0 10px;
+}
+.box .icons li a{
+  color: #515f65;
+}
+.avtar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
 .gradiente {
   width: 70%;
   height: 80%;
   background-image: linear-gradient(white, black);
+}
+#materias {
+  position: relative;
+  transition: all 0.3s;
+}
+#presentacion{
+  position: relative;
+}
+.imagen {
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.imagen:hover {
+  filter: grayscale(0%);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (max-width: 1199px) {
@@ -53,6 +141,14 @@ body {
 
   .lead-xl {
     font-size: 1.2rem;
+  }
+  #inicio {
+    flex-direction: fixed;
+  }
+}
+@media (max-width: 980px) {
+  .navbar {
+    position: relative !important;
   }
 }
 

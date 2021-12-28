@@ -1,0 +1,111 @@
+:root {
+  --col-am: rgb(235, 78, 30);
+  --col-ne: black;
+  --col-bl: white;
+  --col-light: rgba(248, 249, 250);
+}
+
+body {
+  font-family: "arial", sans-serif;
+  font-weight: 200;
+  background-color: var(--col-bl);
+  color: var(--col-ne);
+  letter-spacing: 0.02rem;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.fixed-top .bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--col-light), var(--bs-bg-opacity)) !important;
+}
+
+.navbar .nav-link {
+  margin-left: 2.1rem;
+}
+.navbar .nav-link .navbar__letra {
+  font-size: 1.2rem;
+}
+.navbar .nav-link .nav-link :hover {
+  background-color: var(--col-am);
+  color: var(--col-ne);
+  border: 1px solid var(--col-am);
+}
+
+.border-right {
+  border-right: 1px solid rgba(24, 24, 24, 0) !important;
+}
+
+h1 {
+  position: relative;
+  float: left;
+}
+h1 h1 span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  border-left: 1px solid #000;
+  -webkit-animation: escribir 5s steps(60) infinite alternate;
+          animation: escribir 5s steps(60) infinite alternate;
+}
+
+@-webkit-keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+.gradiente {
+  width: 70%;
+  height: 80%;
+  background-image: linear-gradient(white, #aca2a2);
+}
+
+.gradiente1 {
+  width: 50%;
+  height: 80%;
+  background-image: linear-gradient(black, #8f8787);
+}
+
+/* Start: Google Maps Responsive */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 40.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* End: Google Maps Responsive */
+@media (max-width: 1199px) {
+  .costado {
+    margin: 2rem 0;
+  }
+
+  .lead-xl {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
