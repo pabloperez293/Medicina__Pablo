@@ -25,9 +25,7 @@ body {
 }
 /* se agrega para el iniciio */
 
-#inicio {
-  height: 550px;
-}
+
 .navbar-toggler:focus {
   box-shadow: none;
 }
